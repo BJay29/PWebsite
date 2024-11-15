@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond;
+  background-color: #3c2a4d;
+  background-image: linear-gradient(45deg, #211829, #211829);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Section Styling */
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 12px rgb(255, 255, 255);
+}
+
+.home h1 {
+  font-size: 5.0rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.home p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.subheading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
+/* General Styling for About Section */
+.about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Styling for the main content */
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3120f3;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.about-section h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Skills Section */
+.skills {
+  background-color: rgba(0, 0, 0, 0.6);  /* Dark background for contrast */
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px;  /* Space between about and skills section */
+}
+
+.skills h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Separate "About Me" Section */
+.about-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills li {
+    font-size: 1rem;
+  }
+}
+
+/* Education Section Styling */
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #000000;
+  padding: 60px;
+  border-radius: 40px;
+}
+
+.education-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  width: 130%;
+}
+
+.education-details {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgb(255, 255, 255);
+  border: 2px solid #0077b6;
+}
+
+.education-section h2 {
+  grid-column: span 2;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffcccc;
+  text-align: center;
+}
+
+.education-details h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.education-details p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .education-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .education-details h3 {
+    font-size: 1.8rem;
+  }
+
+  .education-details p {
+    font-size: 1rem;
+  }
+
+  .education-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Page Styles */
+.contact-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 3.0rem;
+  color: #ffffff;
+}
+
+.contact-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005f87;
+}
+
+/* Social Media Images */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon-image {
+  width: 40px;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-image:hover {
+  transform: scale(1.1);
+}
+
+.social-icon.facebook:hover {
+  filter: brightness(1.2);
+}
+
+.social-icon.instagram:hover {
+  filter: brightness(1.2);
+}
+
+.social-icon.gmail:hover {
+  filter: brightness(1.2);
+}
+
+/* General Styling for Hobbies Section */
+.hobbies-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+  background-color: #211829;
+  color: #ffffff;
+  height: 80vh;
+}
+
+.hobbies-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styling for each Hobby Section */
+.hobby {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.hobby h3 {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.hobby p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .hobbies-title {
+    font-size: 2rem;
+  }
+
+  .hobby h3 {
+    font-size: 1.5rem;
+  }
+
+  .hobby p {
+    font-size: 1rem;
+  }
+
+  .hobbies-section {
+    padding: 10px;
+  }
+}
